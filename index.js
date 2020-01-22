@@ -31,5 +31,5 @@ function replace(oldName, newName) {
 }
 
 
-const x = replace('elif2','samer');
+const x = replace('elif','samer');
 //arr2.splice(0,1,'samer');
