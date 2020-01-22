@@ -30,6 +30,22 @@ function replace(oldName, newName) {
     }
 }
 
+function loop() {
+for (let i = 0;i < arr2.length;i++) {
 
-const x = replace('elif','samer');
-//arr2.splice(0,1,'samer');
+    console.log('student  '+ i +' '+arr2[i])
+    console.log(`student ${i} : ${arr2[i]}`)
+}
+}
+
+function loopWithForEach() {
+    arr.forEach(function(item) {
+        console.log(`birthday of ${item.name} is ${item.birthday}`)
+
+
+    })
+
+}
+
+
+ loopWithForEach();
