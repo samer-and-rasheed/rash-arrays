@@ -1,3 +1,11 @@
+const http = require('http');
+//create a server object:
+http.createServer(function (req, res) {
+    res.write('hello papa'); 
+    res.end(); 
+  }).listen(3000);
+  
+
 const arr = [
     { name: 'elif', birthday: '20.9.2008', nationality: 'turkey' },
     { name: 'nico', birthday: '18.5.2008', nationality: 'turkey' },
@@ -39,13 +47,15 @@ for (let i = 0;i < arr2.length;i++) {
 }
 
 function loopWithForEach() {
+    const names = [];
     arr.forEach(function(item) {
-        console.log(`birthday of ${item.name} is ${item.birthday}`)
-
-
+        names.push(`birthday of ${item.name} is ${item.birthday}`)
     })
+    const obj = {values:names}
+    const js = JSON.stringify(obj);
+    return js;
 
 }
 
 
- loopWithForEach();
+ //loopWithForEach();
